@@ -1,3 +1,7 @@
 # Huffman
 
-Projeto Estrutura de Dados (P2)
+Huffman_algorithm
+
+Email:
+
+ejsb2@ic.ufal.br
