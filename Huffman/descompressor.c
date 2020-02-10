@@ -2,7 +2,7 @@
 #include "header.h"
 
 int Trash_size;
-short Tree_size;
+short int Tree_size;
 FILE *file;
 
 void InitialInformation(unsigned char *huff_tree,unsigned char B_Trash,unsigned char B_Tree)
