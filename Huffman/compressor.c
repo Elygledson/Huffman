@@ -190,9 +190,11 @@ unsigned char set_bit(unsigned char c, int i)
 void Write_Bytes(FILE *FileHeader,unsigned char *string,int SizeTrash,int SizeTree)
 {
     short int aux = SizeTrash;
-    aux  <<= 13;
-    aux+=SizeTree; 
+
+    aux  = (aux << 13) | SizeTree; 
+
     fprintf(FileHeader,"%c%c",aux >> 8,aux);
+
     fwrite(string,1,SizeTree,FileHeader);
 }
 
